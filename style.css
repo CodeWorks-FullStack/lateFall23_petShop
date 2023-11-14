@@ -1,0 +1,109 @@
+header {
+
+    min-height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    /* TODO put a note here for the difference btwn line boxes and containers */
+    /* align-items: center; */
+    /* border-bottom: solid 2px black; */
+}
+
+nav>span {
+    padding: 10px;
+}
+
+header button {
+    border: none;
+    background-color: transparent;
+}
+
+main {
+    /* background-color: blue; */
+    min-height: 30px;
+    display: flex;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+img {
+    /* object-fit: cover; */
+    object-position: center;
+    width: 100%;
+    /* height: 50%; */
+}
+
+footer {
+    background-color: #16063B;
+    color: white;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+/* NOTE crazy selector */
+/* footer>div:nth-of-type(2)>p {
+    color: yellow;
+} */
+
+h2 {
+    text-align: center;
+}
+
+
+/* CLASS STYLES */
+
+.logo {
+    font-size: 20px;
+}
+
+.left-section {
+    display: flex;
+    /* TODO sam put in notes ab how main axis changes when changing flex direction */
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.left-section>p {
+    font-size: large;
+    margin-bottom: 65px;
+}
+
+.contact-div {
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: baseline;
+}
+
+#service-btn {
+    background-color: purple;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 4px 4px 5px purple;
+    border: none;
+}
+
+.middle-card-text {
+    margin: 0 20px;
+}
+
+/* .right-section {} */
+
+/* section {
+    width: 50%;
+} */
+
+/* UTILITIES */
+
+.w-50 {
+    width: 50%;
+}
+
+.d-flex {
+    display: flex
+}
