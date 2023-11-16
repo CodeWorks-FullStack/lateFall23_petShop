@@ -1,11 +1,14 @@
-header {
+/* ELEMENT SELECTORS */
 
+header {
     min-height: 30px;
     display: flex;
     justify-content: space-around;
+    /* NOTE align-items: baseline will align elements along their line box or baseline of the content */
     align-items: baseline;
-    /* TODO put a note here for the difference btwn line boxes and containers */
+    /* NOTE align-items:center will align elements across the center of the flex container */
     /* align-items: center; */
+    /* NOTE we replaced this border with an hr element */
     /* border-bottom: solid 2px black; */
 }
 
@@ -62,7 +65,8 @@ h2 {
 
 .left-section {
     display: flex;
-    /* TODO sam put in notes ab how main axis changes when changing flex direction */
+    /* NOTE be mindful when using flex direction; this changes the direction or 'flow' in which elements display inside of a flex container. Column will orient child elements top->down instead of left->right */
+    /* NOTE changing the direction changes the main axis; if we change direction to column, we now use justify-content to move around the y-axis */
     flex-direction: column;
     justify-content: center;
     padding: 0 40px;
